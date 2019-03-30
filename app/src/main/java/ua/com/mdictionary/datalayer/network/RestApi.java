@@ -4,11 +4,11 @@ import java.util.List;
 
 import io.reactivex.Single;
 import retrofit2.http.GET;
-import ua.com.mdictionary.datalayer.network.response.ObjectResponse;
+import ua.com.mdictionary.datalayer.network.response.LessonsResponse;
 
 public interface RestApi {
 
     @GET("ws/objectsList")
-    public Single<List<ObjectResponse>> getObjects();
+    public Single<List<LessonsResponse>> getObjects();
 
 }

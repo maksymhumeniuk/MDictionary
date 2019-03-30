@@ -5,15 +5,15 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 import ua.com.mdictionary.datalayer.network.RestApi;
-import ua.com.mdictionary.datalayer.repository.objects.ObjectsRepositoryImpl;
-import ua.com.mdictionary.domainlayer.global.repositories.objects.ObjectsRepository;
+import ua.com.mdictionary.datalayer.repository.objects.LessonsRepositoryImpl;
+import ua.com.mdictionary.domainlayer.global.repositories.objects.LessonsRepository;
 
 @Module
 public class RepositoryModule {
 
     @Provides
     @Singleton
-    ObjectsRepository recommendationsRepository(RestApi restApi) {
-        return new ObjectsRepositoryImpl(restApi);
+    LessonsRepository recommendationsRepository(RestApi restApi) {
+        return new LessonsRepositoryImpl(restApi);
     }
 }

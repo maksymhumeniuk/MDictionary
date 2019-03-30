@@ -1,4 +1,4 @@
-package ua.com.mdictionary.presentationlayer;
+package ua.com.mdictionary;
 
 import javax.inject.Singleton;
 
@@ -7,8 +7,8 @@ import ua.com.mdictionary.datalayer.di.ApplicationModule;
 import ua.com.mdictionary.datalayer.di.PreferenceModule;
 import ua.com.mdictionary.datalayer.di.RepositoryModule;
 import ua.com.mdictionary.datalayer.di.RetrofitModule;
-import ua.com.mdictionary.presentationlayer.ui.fragment.objects.di.ObjectsModule;
-import ua.com.mdictionary.presentationlayer.ui.fragment.objects.di.ObjectsSubcomponent;
+import ua.com.mdictionary.presentationlayer.ui.fragment.lessons.di.LessonsModule;
+import ua.com.mdictionary.presentationlayer.ui.fragment.lessons.di.LessonsSubcomponent;
 
 @Singleton
 @Component(modules = {
@@ -16,7 +16,7 @@ import ua.com.mdictionary.presentationlayer.ui.fragment.objects.di.ObjectsSubcom
         RepositoryModule.class,
         RetrofitModule.class,
         PreferenceModule.class})
-public interface MGitApplicationComponent {
+public interface MDictionaryApplicationComponent {
     // subcomponents
-    ObjectsSubcomponent plus(ObjectsModule objectsModule);
+    LessonsSubcomponent plus(LessonsModule lessonsModule);
 }

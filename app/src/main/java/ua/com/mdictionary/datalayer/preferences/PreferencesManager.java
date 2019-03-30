@@ -2,9 +2,6 @@ package ua.com.mdictionary.datalayer.preferences;
 
 import android.content.SharedPreferences;
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class PreferencesManager {
 
     private static final String SELECTED_IDS = "selected_ids";
@@ -14,7 +11,7 @@ public class PreferencesManager {
         this.sharedPreferences = sharedPreferences;
     }
 
-    public void saveSelectedId(String id) {
+   /* public void saveSelectedId(String id) {
         Set<String> selectedObjects = getSelectedIds();
         selectedObjects.add(id);
         sharedPreferences.edit().putStringSet(SELECTED_IDS, selectedObjects).apply();
@@ -34,6 +31,6 @@ public class PreferencesManager {
             selectedIds.remove(id);
         }
         sharedPreferences.edit().putStringSet(SELECTED_IDS, selectedIds).apply();
-    }
+    }*/
 
 }

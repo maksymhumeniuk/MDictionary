@@ -3,18 +3,18 @@ package ua.com.mdictionary.domainlayer.interactor.objects;
 import java.util.List;
 
 import io.reactivex.Single;
-import ua.com.mdictionary.datalayer.network.response.ObjectResponse;
-import ua.com.mdictionary.domainlayer.global.repositories.objects.ObjectsRepository;
+import ua.com.mdictionary.datalayer.network.response.LessonsResponse;
+import ua.com.mdictionary.domainlayer.global.repositories.objects.LessonsRepository;
 
 public class ObjectsInteractor {
 
-    private ObjectsRepository objectsRepository;
+    private LessonsRepository lessonsRepository;
 
-    public ObjectsInteractor(ObjectsRepository objectsRepository) {
-        this.objectsRepository = objectsRepository;
+    public ObjectsInteractor(LessonsRepository lessonsRepository) {
+        this.lessonsRepository = lessonsRepository;
     }
 
-    public Single<List<ObjectResponse>> getObjects() {
-        return objectsRepository.getObjects();
+    public Single<List<LessonsResponse>> getObjects() {
+        return lessonsRepository.getObjects();
     }
 }

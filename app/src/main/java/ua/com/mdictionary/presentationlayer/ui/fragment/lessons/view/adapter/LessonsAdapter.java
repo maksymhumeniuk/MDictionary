@@ -1,12 +1,12 @@
-package ua.com.mdictionary.presentationlayer.ui.fragment.objects.view.adapter;
+package ua.com.mdictionary.presentationlayer.ui.fragment.lessons.view.adapter;
 
 
 import ua.com.mdictionary.core.view.adapter.BindingAdapter;
 import ua.com.mdictionary.core.view.adapter.BindingHolder;
 
-public class ObjectsAdapter extends BindingAdapter<ObjectItem> {
+public class LessonsAdapter extends BindingAdapter<LessonsItem> {
 
-    //private OnItemLongClickListener<ObjectItem> onItemLongClickListener;
+    //private OnItemLongClickListener<LessonsItem> onItemLongClickListener;
 
     @Override
     public void onBindViewHolder(BindingHolder viewHolder, int position) {
@@ -19,7 +19,7 @@ public class ObjectsAdapter extends BindingAdapter<ObjectItem> {
         });*/
     }
 
-    /*public void setOnLongClickListener(OnItemLongClickListener<ObjectItem> longClickListener) {
+    /*public void setOnLongClickListener(OnItemLongClickListener<LessonsItem> longClickListener) {
         this.onItemLongClickListener = longClickListener;
     }
 

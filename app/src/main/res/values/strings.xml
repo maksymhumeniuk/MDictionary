@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MGit</string>
+    <string name="app_name">MDictionary</string>
     <string name="message_loading">Загрузка данных</string>
     <string name="error_empty_fields">Поля должны быть заполнены</string>
     <string name="error_no_internet_connection">Отсутствует интернет соединение</string>

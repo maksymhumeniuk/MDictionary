@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ua.com.mdictionary.presentationlayer.ui.fragment.lessons.viewmodel.LessonsScreenViewModel" />
+    </data>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_recommendations"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        app:items="@{viewModel.lessonsItems}"
+        tools:listitem="@layout/item_lesson" />
+
+</layout>
